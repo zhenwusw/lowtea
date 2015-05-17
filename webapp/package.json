@@ -1,0 +1,23 @@
+{
+  "name": "lowtea-webapp",
+  "version": "0.0.1",
+  "description": "lowtea webapp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhenwusw/lowtea"
+  },
+  "dependencies": {
+    "react": "0.13.3",
+    "react-router": "0.13.3",
+  },
+  "devDependencies": {
+    "jsx-loader": "0.13.1",
+    "webpack": "1.8.1",
+    "webpack-dev-server": "1.8.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --port 2999 --inline --content-base http://localhost:3000/",
+    "build": "NODE_ENV=production webpack -p"
+  },
+  "author": "zhenwusw@gmail.com"
+}
